@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+.git
+.env
+infra
+k8s
+REPORT.md
