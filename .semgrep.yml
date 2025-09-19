@@ -1,0 +1,9 @@
+# small example ruleset to detect hardcoded secrets and typical issues
+rules:
+  - id: no-hardcoded-secrets
+    patterns:
+      - pattern-either:
+          - pattern: "MONGODB_URI = '...'"
+          - pattern: "password = '...'"
+    message: "Possible hardcoded secret"
+    severity: ERROR
